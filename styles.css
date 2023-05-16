@@ -1,0 +1,371 @@
+body {
+  min-height: 100vh;
+  line-height: 1.4em;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(175, 103, 233, 1) !important;
+  -webkit-background-color: rgba(175, 103, 233, 1)!important;
+}
+h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2em;
+}
+p {
+  color: hsl(237, 12%, 33%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+hr {
+  width:90%;
+  margin:0;
+  transform: translateX(5%);
+}
+
+
+.accordion {
+    background-color: white;
+    color: #444;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.4s;
+  }
+  .active, .accordion:hover  {
+    background-color: #fff;
+    font-weight: bold;
+  }
+  .accordion:after {
+    content: url('images/icon-arrow-down.svg');
+    float: right;
+  }
+  .active:after {
+    content:  url('images/icon-arrow-down.svg');
+    transform: rotate(180deg);
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/********** INICIA  --min-width: 321-- and --max-width: 374--   ***********************************/
+
+        
+@media (min-width: 321px) and (max-width: 374px) {
+  img#front  {
+    display: block;
+    position: relative;
+    diplay: flex;
+    width: 100%;
+    max-height: 180px;
+    transform: translate(0px, -8px) !important;
+    z-index: 2;
+  }
+       
+  img#back {
+    display: block;
+    position:relative;
+    diplay:flex;
+    width:70%;
+    transform: translate(50px, 200px);
+    z-index: 2;
+  }
+
+  .acordion-container {
+    display: block;
+    position: relative;
+    background: white;
+    width: 90% !important;
+    transform: translateX(15px) !important;
+    min-height: 550px;
+    height: auto;
+    
+    border-radius: 15px;
+    padding-top: 150px;
+    margin-top: -100px !important;
+    z-index: 1;
+  }
+}
+
+/**********  TERMINA  --  min-width: 321 and max-width: 374  --   ***********************************/
+
+/**********  INICA  --  min-width: 375 and max-width: 425  --   ***********************************/
+
+@media (min-width: 375px) and (max-width: 425.9px) {
+  img#front  {
+    display: block;
+    position: relative;
+    diplay: flex;
+    width: 100%;
+    max-height: 180px;
+    transform: translate(0px, -8px) !important;
+    z-index: 2;
+  }
+       
+  img#back {
+    display: block;
+    position:relative;
+    diplay:flex;
+    width:70%;
+    transform: translate(55px, 200px);
+    z-index: 2;
+  }
+
+  .acordion-container {
+    display: block;
+    position: relative;
+    background: white;
+    width: 90% !important;
+    transform: translateX(15px) !important;
+    min-height: 550px;
+    height: auto;
+    
+    border-radius: 15px;
+    padding-top: 150px;
+    margin-top: -100px !important;
+    z-index: 1;
+  }
+}
+
+/**********  TERMINA  -- min-width: 375 and max-width: 425  --   ***********************************/
+
+/**********  INICA  --  min-width: 426px and max-width: 576px  --   ***********************************/
+   
+
+@media (min-width: 426px) and (max-width: 576px) {
+  .acordion-container {
+    display: block;
+    position: relative;
+    background: white;
+    width: 90% !important;
+    transform: translateX(15px) !important;
+    min-height: 550px;
+    height: auto;
+    
+    border-radius: 15px;
+    padding-top: 150px;
+    margin-top: -100px !important;
+    z-index: 1;
+  }
+  
+  img#front  {
+    display: block;
+    position: relative;
+    diplay: flex;
+    width: 100%;
+    max-height: 180px;
+    transform: translate(0px, -8px) !important;
+    z-index: 2;
+  }
+       
+  img#back {
+    display: block;
+    position:relative;
+    diplay:flex;
+    width:70%;
+    transform: translate(55px, 200px);
+    z-index: 2;
+  }
+}
+/**********  TERMINA  -- min-width: 426px and max-width: 576px  --   ***********************************/
+
+/**********  INICIA  -- min-width: 577px  and max-width: 768px --   ***********************************/
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .acordion-container {
+    display: block;
+    position: relative;
+    background: white;
+    width: 70% !important;
+    transform: translateX(120px) !important;
+    min-height: 600px !important;
+    height: auto;
+    
+    border-radius: 15px;
+    padding-top: 150px;
+    margin-top: -150px !important;
+    z-index: 1;
+  }
+  
+  img#front  {
+    display: block;
+    position: relative;
+    diplay: flex;
+    width: 100%;
+    max-height: 180px;
+    transform: translate(0px, -60px) !important;
+    z-index: 2;
+  }
+       
+  img#back {
+    display: block;
+    position:relative;
+    diplay:flex;
+    width:30%;
+    transform: translate(260px, 150px);
+    z-index: 2;
+  }
+}
+            
+
+/**********  TERMINA  -- min-width: 577px  and max-width: 768px --   ***********************************/
+
+/**********  EMPIEZA  -- min-width: 769px  --   ***********************************/
+
+@media (min-width: 768.1px) {
+  body {
+    background: hsl(240, 73%, 65%) !important;
+  }
+  #myCard {
+    min-width: 70vw;
+    max-height: 600px;
+    height: auto;
+    margin: 10px;
+    transform: translateX(80px);
+    background: white !important;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .acordion-container {
+    display: block;
+    position: relative;
+    background: white;
+    width: 75% !important;
+    transform: translate(100px, 40px) !important;
+    max-height: 70vh;
+    height: 50%;
+    word-break: break-word;
+    object-fit: contain;
+    
+    border-radius: 15px;
+    padding-top: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+  img#front, img#back {
+    display: none !important;
+  }
+  img#box-image {
+    display: flex !important;
+    position: relative;
+    width: 170px;
+    height: 160px;
+    transform: translate(20px, 10px);
+    z-index: 4;
+  }
+  img#front-desc  {
+    display: flex !important;
+    position: relative;
+    width: 350px;
+    max-height: 550px;
+    transform: translate(-30px, 0px) !important;
+    z-index: 1;
+  }
+       
+  img#back-desc {
+    display: flex !important;
+    position:relative;
+    width:700px;
+    height: 700px;
+    transform: translate(-400px, -150px);
+    z-index: -2;
+  }
+}
+@media (min-width: 1200px) {
+      body {
+    background: hsl(240, 73%, 65%) !important;
+  }
+  #myCard {
+    background: white !important;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .acordion-container {
+    display: block;
+    position: relative;
+    background: white;
+    width: 55% !important;
+    transform: translate(200px, 40px) !important;
+    max-height: 70vh;
+    height: 50%;
+    word-break: break-word;
+    object-fit: contain;
+    
+    border-radius: 15px;
+    padding-top: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+  img#front, img#back {
+    display: none !important;
+  }
+  img#box-image {
+        display: flex !important;
+    position: relative;
+    width: 170px;
+    height: 160px;
+    transform: translate(173px, 58px);
+    z-index: 4;
+}
+  img#front-desc  {
+    display: flex !important;
+    position: relative;
+    width: 170%;
+    max-height: 931px;
+    transform: translate(-90px, -907px) !important;
+    z-index: 1;
+}
+       
+  img#back-desc {
+        display: flex !important;
+    position: relative;
+    width: 940px;
+    height: 947px;
+    transform: translate(-462px, -248px);
+    z-index: -2;
+}
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align:
+  center; margin-bottom:
+  10px;}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+ 
